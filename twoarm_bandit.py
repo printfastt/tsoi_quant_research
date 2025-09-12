@@ -36,7 +36,6 @@ def plot_bandit_results(bandit, rfr, mu, sd, arm1_estimates=None, arm2_estimates
     axs[0, 1].set_ylabel("Returns")
     axs[0, 1].grid(True, linestyle="--", alpha=0.6)
 
-    # actions
     # axs[1, 0].step(bandit.N, bandit.actions, where="mid", color="purple")
     axs[1, 0].scatter(bandit.N, bandit.actions, color="purple")
 
